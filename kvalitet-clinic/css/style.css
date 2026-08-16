@@ -185,23 +185,32 @@ p {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  transition: filter var(--transition);
+}
+
+.logo__img {
+  height: 40px;
+  width: auto;
+}
+
+/* On scrolled (white bg), invert the white text to dark */
+.header.is-scrolled .logo {
+  filter: brightness(0.2);
+}
+
+/* Text logo for inner pages */
+.logo--text {
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--navy);
   letter-spacing: -0.01em;
   transition: color var(--transition);
 }
 
-.header.is-scrolled .logo {
-  color: var(--navy);
-}
-
-.logo span {
-  color: var(--cyan-light);
-}
-
-.header.is-scrolled .logo span {
+.logo--text span {
   color: var(--cyan-primary);
 }
 
@@ -595,8 +604,8 @@ p {
 
 .about__portrait-img {
   width: 100%;
-  max-width: 320px;
-  aspect-ratio: 1;
+  max-width: 340px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center top;
   border-radius: 8px;
