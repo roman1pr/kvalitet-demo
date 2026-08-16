@@ -16,10 +16,12 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header is-scrolled" id="header">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html" class="logo">Квалите<span>Т</span></a>
+        <a href="index.html" class="logo">
+          <img src="img/logo-white.png" alt="КвалитеТ — семейный стоматологический центр" class="logo__img">
+        </a>
         
         <nav class="nav">
           <ul class="nav__list">
@@ -61,18 +63,22 @@
     <div class="container">
       <div class="contact-grid">
         
-        <div class="contact-block">
+        <div class="contact-block fade-in">
           <h3 class="contact-block__title">
-            <span class="contact-block__icon">📍</span>
+            <span class="contact-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
             Адрес
           </h3>
           <p><strong>г. Москва, ул. Дубнинская, 13</strong></p>
           <p class="text-muted">Вход со стороны подъездов</p>
         </div>
         
-        <div class="contact-block">
+        <div class="contact-block fade-in">
           <h3 class="contact-block__title">
-            <span class="contact-block__icon">🕙</span>
+            <span class="contact-block__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
             Режим работы
           </h3>
           <p><strong>Ежедневно</strong></p>
@@ -80,9 +86,11 @@
           <p class="text-muted">Без перерывов и выходных</p>
         </div>
         
-        <div class="contact-block">
+        <div class="contact-block fade-in">
           <h3 class="contact-block__title">
-            <span class="contact-block__icon">📞</span>
+            <span class="contact-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
             Телефоны
           </h3>
           <p><a href="tel:+74994813208"><strong>+7 499 481-3208</strong></a></p>
@@ -90,9 +98,11 @@
           <p><a href="tel:+79660194119">+7 966 019-4119</a></p>
         </div>
         
-        <div class="contact-block">
+        <div class="contact-block fade-in">
           <h3 class="contact-block__title">
-            <span class="contact-block__icon">🚇</span>
+            <span class="contact-block__icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
             Как добраться
           </h3>
           <p><strong>От м. Петровско-Разумовская:</strong><br>автобус 677 до остановки «Дубнинская, 8»</p>
@@ -101,26 +111,43 @@
         
       </div>
       
-      <!-- Map placeholder -->
-      <div class="map-placeholder">
-        <p>Москва, ул. Дубнинская, 13 — <a href="https://yandex.ru/maps/-/CDuuJA~f" target="_blank" rel="noopener">Открыть на карте</a></p>
+      <!-- Map -->
+      <div class="map-container fade-in">
+        <iframe 
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a&amp;source=constructor&amp;ll=37.545259%2C55.871424&amp;z=16&amp;pt=37.545259%2C55.871424%2Cpm2blm"
+          allowfullscreen="true"
+          loading="lazy"
+          title="Карта: КвалитеТ, ул. Дубнинская, 13">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINIC PHOTO -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="display: grid; gap: var(--space-lg); align-items: center;" class="fade-in">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md);">
+          <img src="img/microscope.jpg" alt="Лечение под микроскопом в клинике КвалитеТ" style="border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.1); width: 100%; height: 260px; object-fit: cover;">
+          <img src="img/dentist-loupes.jpg" alt="Работа с увеличением в клинике КвалитеТ" style="border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.1); width: 100%; height: 260px; object-fit: cover;">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- LICENSE INFO -->
-  <section class="section section--alt">
+  <section class="section">
     <div class="container">
-      <h2>Юридическая информация</h2>
+      <h2 class="fade-in">Юридическая информация</h2>
       
-      <div style="margin-top: var(--space-md);">
+      <div style="margin-top: var(--space-md);" class="fade-in">
         <p><strong>ООО «СК КвалитеТ»</strong></p>
         <p>ОГРН: 1027739376026</p>
         <p>Лицензия на осуществление медицинской деятельности: <strong>ЛО-77-01-009015</strong> от 18.09.2014</p>
         <p>Выдана: Департамент здравоохранения города Москвы</p>
       </div>
       
-      <div class="about__badges" style="margin-top: var(--space-lg);">
+      <div class="about__badges fade-in" style="margin-top: var(--space-lg); padding-left: 0;">
         <span class="badge">Клинический центр РНИМУ им. Н.И. Пирогова</span>
         <span class="badge">Инновационный центр Стоматологической Ассоциации России</span>
       </div>
@@ -129,8 +156,12 @@
 
   <!-- BOOKING -->
   <section class="section section--navy booking" id="booking">
+    <div class="booking__bg">
+      <img src="img/hero-treatment.jpg" alt="">
+    </div>
+    <div class="booking__overlay"></div>
     <div class="container">
-      <div class="booking__inner">
+      <div class="booking__inner fade-in">
         <h2>Запишитесь на приём</h2>
         <p class="booking__subtitle">Оставьте контакты — мы перезвоним и подберём удобное время</p>
         
@@ -192,13 +223,43 @@
   </footer>
 
   <script>
+    // Mobile nav toggle
     function toggleMobileNav() {
       document.getElementById('mobileNav').classList.toggle('is-open');
     }
     
+    // Form handler
     function handleSubmit(e) {
       e.preventDefault();
       alert('Спасибо! Мы перезвоним вам в ближайшее время.');
+    }
+    
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(el => {
+      fadeObserver.observe(el);
+    });
+    
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('is-visible');
+      });
     }
   </script>
 

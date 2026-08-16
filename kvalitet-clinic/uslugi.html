@@ -16,10 +16,12 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header is-scrolled" id="header">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html" class="logo">Квалите<span>Т</span></a>
+        <a href="index.html" class="logo">
+          <img src="img/logo-white.png" alt="КвалитеТ — семейный стоматологический центр" class="logo__img">
+        </a>
         
         <nav class="nav">
           <ul class="nav__list">
@@ -61,7 +63,7 @@
     <div class="container">
       
       <!-- Терапия -->
-      <div class="price-section">
+      <div class="price-section fade-in">
         <h2>Терапевтическая стоматология</h2>
         <p class="text-muted mb-md">Лечение кариеса, пульпита, периодонтита. Работа под микроскопом для максимальной точности и сохранения тканей зуба.</p>
         
@@ -102,7 +104,7 @@
       </div>
 
       <!-- Имплантация -->
-      <div class="price-section">
+      <div class="price-section fade-in">
         <h2>Имплантология</h2>
         <p class="text-muted mb-md">Установка зубных имплантатов ведущих мировых производителей. Синус-лифтинг, костная пластика, формирование десны.</p>
         
@@ -151,7 +153,7 @@
       </div>
 
       <!-- Ортодонтия -->
-      <div class="price-section">
+      <div class="price-section fade-in">
         <h2>Ортодонтия — исправление прикуса</h2>
         <p class="text-muted mb-md">Брекет-системы, пластинки, элайнеры (капы) для детей и взрослых. Индивидуальный план лечения.</p>
         
@@ -184,44 +186,80 @@
       </div>
 
       <!-- Другие услуги -->
-      <div class="price-section">
+      <div class="price-section fade-in">
         <h2>Другие услуги</h2>
         
-        <div class="services-grid" style="margin-top: var(--space-md);">
-          <div class="service-card">
-            <h3 class="service-card__title">Протезирование</h3>
-            <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими зуботехническими лабораториями.</p>
+        <div class="services-grid" style="margin-top: var(--space-lg);">
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/clinic-action-1.jpg" alt="Протезирование">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Протезирование</h3>
+              <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими зуботехническими лабораториями.</p>
+            </div>
           </div>
           
-          <div class="service-card">
-            <h3 class="service-card__title">Хирургия</h3>
-            <p class="service-card__desc">Удаление зубов любой сложности, в том числе зубов мудрости. Пластика уздечки, операции на дёснах.</p>
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/dentist-loupes.jpg" alt="Хирургия">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Хирургия</h3>
+              <p class="service-card__desc">Удаление зубов любой сложности, в том числе зубов мудрости. Пластика уздечки, операции на дёснах.</p>
+            </div>
           </div>
           
-          <div class="service-card">
-            <h3 class="service-card__title">Детская стоматология</h3>
-            <p class="service-card__desc">Лечение молочных и постоянных зубов у детей. Герметизация фиссур, профилактика кариеса.</p>
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/clinic-action-2.jpg" alt="Детская стоматология">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Детская стоматология</h3>
+              <p class="service-card__desc">Лечение молочных и постоянных зубов у детей. Герметизация фиссур, профилактика кариеса.</p>
+            </div>
           </div>
           
-          <div class="service-card">
-            <h3 class="service-card__title">Художественная реставрация</h3>
-            <p class="service-card__desc">Восстановление формы и цвета зубов. Устранение сколов, трещин, потемнений эмали.</p>
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/microscope.jpg" alt="Художественная реставрация">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Художественная реставрация</h3>
+              <p class="service-card__desc">Восстановление формы и цвета зубов. Устранение сколов, трещин, потемнений эмали.</p>
+            </div>
           </div>
           
-          <div class="service-card">
-            <h3 class="service-card__title">Лечение дёсен</h3>
-            <p class="service-card__desc">Пародонтология: лечение гингивита, пародонтита. Профессиональная гигиена, Vector-терапия.</p>
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/clinic-action-3.jpg" alt="Лечение дёсен">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Лечение дёсен</h3>
+              <p class="service-card__desc">Пародонтология: лечение гингивита, пародонтита. Профессиональная гигиена, Vector-терапия.</p>
+            </div>
           </div>
           
-          <div class="service-card">
-            <h3 class="service-card__title">Рентген-диагностика</h3>
-            <p class="service-card__desc">Цифровой визиограф и ортопантомограф — точнейшая диагностика с минимальной лучевой нагрузкой.</p>
+          <div class="service-card" style="min-height: 240px;">
+            <div class="service-card__bg">
+              <img src="img/hero-treatment.jpg" alt="Рентген-диагностика">
+            </div>
+            <div class="service-card__overlay"></div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Рентген-диагностика</h3>
+              <p class="service-card__desc">Цифровой визиограф и ортопантомограф — точнейшая диагностика с минимальной лучевой нагрузкой.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Note -->
-      <div style="margin-top: var(--space-xl); padding: var(--space-md); background: var(--paper-warm); border-radius: 6px; border-left: 3px solid var(--cyan-primary);">
+      <div class="note-box fade-in">
         <p class="mb-0">
           <strong>Точную стоимость лечения</strong> определяет врач после осмотра и диагностики. 
           Мы составляем индивидуальный план с фиксированной ценой и гарантийными обязательствами по договору.
@@ -233,8 +271,12 @@
 
   <!-- BOOKING -->
   <section class="section section--navy booking" id="booking">
+    <div class="booking__bg">
+      <img src="img/microscope.jpg" alt="">
+    </div>
+    <div class="booking__overlay"></div>
     <div class="container">
-      <div class="booking__inner">
+      <div class="booking__inner fade-in">
         <h2>Запишитесь на консультацию</h2>
         <p class="booking__subtitle">Осмотр, диагностика, план лечения с точной стоимостью</p>
         
@@ -296,13 +338,43 @@
   </footer>
 
   <script>
+    // Mobile nav toggle
     function toggleMobileNav() {
       document.getElementById('mobileNav').classList.toggle('is-open');
     }
     
+    // Form handler
     function handleSubmit(e) {
       e.preventDefault();
       alert('Спасибо! Мы перезвоним вам в ближайшее время.');
+    }
+    
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(el => {
+      fadeObserver.observe(el);
+    });
+    
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('is-visible');
+      });
     }
   </script>
 
