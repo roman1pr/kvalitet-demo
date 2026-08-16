@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КвалитеТ — Семейная стоматология в Москве</title>
+  <meta name="description" content="Стоматологическая клиника КвалитеТ — 20 лет заботы о здоровье вашей семьи. Москва, ул. Дубнинская, 13.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">Квалите<span>Т</span></a>
+        
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+            <li><a href="uslugi.html" class="nav__link">Услуги и цены</a></li>
+            <li><a href="kontakty.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        
+        <a href="tel:+74994813208" class="header__phone">+7 499 481-3208</a>
+        
+        <button class="menu-toggle" aria-label="Меню" onclick="toggleMobileNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+      <nav class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav__list">
+          <li><a href="index.html" class="mobile-nav__link">Главная</a></li>
+          <li><a href="uslugi.html" class="mobile-nav__link">Услуги и цены</a></li>
+          <li><a href="kontakty.html" class="mobile-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Семейная стоматология · 20 лет</span>
+        <h1 class="hero__title">К нам приходят по&nbsp;рекомендациям</h1>
+        <p class="hero__subtitle">
+          Клиника КвалитеТ — это точность, качество и забота о каждом пациенте. 
+          Лечение под микроскопом, компьютерная анестезия без боли, гарантия результата.
+        </p>
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn--primary">Записаться на приём</a>
+          <a href="uslugi.html" class="btn btn--outline">Услуги и цены</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / QUOTE -->
+  <section class="section">
+    <div class="container">
+      <div class="about">
+        <div class="section__header">
+          <h2>Добро пожаловать в КвалитеТ</h2>
+          <p class="text-muted">От латинского Qualitas — точность и качество</p>
+        </div>
+        
+        <blockquote class="about__quote">
+          «Главный наш девиз – помогать людям. Клинике уже 20 лет. И приходят к нам не по рекламе, а по рекомендациям. Самый важный показатель отношения наших пациентов – когда люди рекомендуют нас своим знакомым и доверяют нам самое ценное – своих детей.»
+          <footer class="about__author">
+            <strong>Клепилин Егор Сергеевич</strong>
+            <span>Главный врач клиники, стоматолог-хирург, имплантолог, ортопед</span>
+          </footer>
+        </blockquote>
+        
+        <div class="about__badges">
+          <span class="badge">Клинический центр РНИМУ им. Н.И. Пирогова</span>
+          <span class="badge">Инновационный центр СтАР</span>
+          <span class="badge">Лечение под микроскопом</span>
+          <span class="badge">Компьютерная анестезия</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <h2>Услуги клиники</h2>
+        <p class="text-muted">Все виды стоматологической помощи для взрослых и детей</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card__icon">🦷</div>
+          <h3 class="service-card__title">Терапия</h3>
+          <p class="service-card__desc">Лечение кариеса, пульпита, периодонтита. Работа под микроскопом для максимальной точности.</p>
+          <p class="service-card__price">от 10 000 ₽</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-card__icon">⚙️</div>
+          <h3 class="service-card__title">Имплантация</h3>
+          <p class="service-card__desc">Установка имплантатов Straumann, Osstem, Xive, Astra Tech. Синус-лифтинг, костная пластика.</p>
+          <p class="service-card__price">от 80 000 ₽</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-card__icon">✨</div>
+          <h3 class="service-card__title">Протезирование</h3>
+          <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими лабораториями.</p>
+          <p class="service-card__price">по прайсу</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-card__icon">👶</div>
+          <h3 class="service-card__title">Детская стоматология</h3>
+          <p class="service-card__desc">Бережное лечение молочных и постоянных зубов. Герметизация фиссур, профилактика.</p>
+          <p class="service-card__price">от 8 000 ₽</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-card__icon">📐</div>
+          <h3 class="service-card__title">Ортодонтия</h3>
+          <p class="service-card__desc">Исправление прикуса: брекеты, пластинки, элайнеры. Для детей и взрослых.</p>
+          <p class="service-card__price">от 70 000 ₽</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-card__icon">🧹</div>
+          <h3 class="service-card__title">Гигиена и профилактика</h3>
+          <p class="service-card__desc">Профессиональная чистка, снятие камня, отбеливание. Рекомендуем раз в полгода.</p>
+          <p class="service-card__price">по прайсу</p>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--space-lg);">
+        <a href="uslugi.html" class="btn btn--outline">Все услуги и цены</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <h2>Наши специалисты</h2>
+        <p class="text-muted">Врачи постоянно повышают квалификацию в России, Германии, Швеции, Швейцарии</p>
+      </div>
+      
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-card__avatar">ЕК</div>
+          <h3 class="doctor-card__name">Клепилин Егор Сергеевич</h3>
+          <p class="doctor-card__title">Главный врач, хирург, имплантолог, ортопед</p>
+        </div>
+        
+        <div class="doctor-card">
+          <div class="doctor-card__avatar">ЕВ</div>
+          <h3 class="doctor-card__name">Васильева Евгения Дмитриевна</h3>
+          <p class="doctor-card__title">Микроскопист, эндодонтист</p>
+        </div>
+        
+        <div class="doctor-card">
+          <div class="doctor-card__avatar">АМ</div>
+          <h3 class="doctor-card__name">Маркосян Альберт Александрович</h3>
+          <p class="doctor-card__title">Ортопед, гнатолог</p>
+        </div>
+        
+        <div class="doctor-card">
+          <div class="doctor-card__avatar">ЛШ</div>
+          <h3 class="doctor-card__name">Шор Лиора Мошевна</h3>
+          <p class="doctor-card__title">Терапевт, эндодонтист, микроскопист</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <h2>Отзывы пациентов</h2>
+      </div>
+      
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-card__text">
+            «Ходим всей семьёй. Дети получают подарок за храбрость — это так мило! 
+            Отдельное спасибо администраторам Анастасии, Екатерине и Людмиле за тёплый приём.»
+          </p>
+          <p class="review-card__author">Наталья Сергеева</p>
+          <p class="review-card__date">Декабрь 2025</p>
+        </div>
+        
+        <div class="review-card">
+          <p class="review-card__text">
+            «Светлана Николаевна Мирошниченко — прекрасный врач. Внимательная, аккуратная, 
+            всё объясняет. Лечение прошло совершенно безболезненно. Рекомендую!»
+          </p>
+          <p class="review-card__author">Евгения</p>
+          <p class="review-card__date">12 декабря 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section section--navy booking" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <h2>Запишитесь на приём</h2>
+        <p class="booking__subtitle">Оставьте контакты — мы перезвоним и подберём удобное время</p>
+        
+        <form class="booking-form" onsubmit="handleSubmit(event)">
+          <input type="text" class="form-input" placeholder="Ваше имя" required>
+          <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+          <button type="submit" class="btn btn--primary">Записаться</button>
+        </form>
+        
+        <p class="text-sm" style="margin-top: var(--space-sm); opacity: 0.7;">
+          Ежедневно 10:00–21:00, без перерывов
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Квалите<span>Т</span></div>
+          <p class="footer__desc">
+            Центр семейной стоматологии. 20 лет заботы о здоровье вашей улыбки. 
+            Клинический центр РНИМУ им. Н.И. Пирогова. Инновационный центр СтАР.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="uslugi.html">Услуги и цены</a></li>
+            <li><a href="kontakty.html">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Контакты</h4>
+          <p class="footer__contact-item"><a href="tel:+74994813208">+7 499 481-3208</a></p>
+          <p class="footer__contact-item"><a href="tel:+74994819700">+7 499 481-9700</a></p>
+          <p class="footer__contact-item"><a href="tel:+79660194119">+7 966 019-4119</a></p>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Адрес</h4>
+          <p class="footer__contact-item">г. Москва,<br>ул. Дубнинская, 13</p>
+          <p class="footer__contact-item">Ежедневно<br>10:00–21:00</p>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>© 2026 ООО «СК КвалитеТ». Все права защищены.</p>
+        <p class="footer__legal">
+          ОГРН 1027739376026 · Лицензия ЛО-77-01-009015 от 18.09.2014, Департамент здравоохранения Москвы
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('is-open');
+    }
+    
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Спасибо! Мы перезвоним вам в ближайшее время.');
+    }
+  </script>
+
+</body>
+</html>

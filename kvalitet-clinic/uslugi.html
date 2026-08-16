@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги и цены — КвалитеТ</title>
+  <meta name="description" content="Стоматологические услуги и цены клиники КвалитеТ: терапия, имплантация, ортодонтия, детская стоматология.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">Квалите<span>Т</span></a>
+        
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="uslugi.html" class="nav__link nav__link--active">Услуги и цены</a></li>
+            <li><a href="kontakty.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        
+        <a href="tel:+74994813208" class="header__phone">+7 499 481-3208</a>
+        
+        <button class="menu-toggle" aria-label="Меню" onclick="toggleMobileNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+      <nav class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav__list">
+          <li><a href="index.html" class="mobile-nav__link">Главная</a></li>
+          <li><a href="uslugi.html" class="mobile-nav__link">Услуги и цены</a></li>
+          <li><a href="kontakty.html" class="mobile-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Услуги и цены</h1>
+      <p class="page-header__subtitle">Все виды стоматологической помощи для взрослых и детей</p>
+    </div>
+  </section>
+
+  <!-- PRICE TABLES -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Терапия -->
+      <div class="price-section">
+        <h2>Терапевтическая стоматология</h2>
+        <p class="text-muted mb-md">Лечение кариеса, пульпита, периодонтита. Работа под микроскопом для максимальной точности и сохранения тканей зуба.</p>
+        
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Анестезия</td>
+              <td>1 300 ₽</td>
+            </tr>
+            <tr>
+              <td>Лечение кариеса / восстановление зуба</td>
+              <td>10 000 – 18 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Герметизация фиссур</td>
+              <td>8 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Лечение ICON (без сверления)</td>
+              <td>8 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Лечение пульпита</td>
+              <td>10 000 – 40 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Лечение периодонтита</td>
+              <td>7 000 – 40 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Имплантация -->
+      <div class="price-section">
+        <h2>Имплантология</h2>
+        <p class="text-muted mb-md">Установка зубных имплантатов ведущих мировых производителей. Синус-лифтинг, костная пластика, формирование десны.</p>
+        
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Имплантат Straumann (Швейцария)</td>
+              <td>80 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Имплантат Osstem (Корея)</td>
+              <td>80 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Имплантат Xive (Германия)</td>
+              <td>80 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Имплантат Astra Tech (Швеция)</td>
+              <td>90 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Ортодонтическая опора</td>
+              <td>12 000 – 21 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Синус-лифтинг</td>
+              <td>15 000 – 30 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Костная пластика</td>
+              <td>12 000 – 30 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Формирователь десны</td>
+              <td>6 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Ортодонтия -->
+      <div class="price-section">
+        <h2>Ортодонтия — исправление прикуса</h2>
+        <p class="text-muted mb-md">Брекет-системы, пластинки, элайнеры (капы) для детей и взрослых. Индивидуальный план лечения.</p>
+        
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Брекеты на 1 зубной ряд</td>
+              <td>70 000 – 100 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Ретейнер</td>
+              <td>8 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Ортодонтические пластинки</td>
+              <td>30 000 – 70 000 ₽</td>
+            </tr>
+            <tr>
+              <td>Элайнеры (каппы)</td>
+              <td>156 000 – 396 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Другие услуги -->
+      <div class="price-section">
+        <h2>Другие услуги</h2>
+        
+        <div class="services-grid" style="margin-top: var(--space-md);">
+          <div class="service-card">
+            <h3 class="service-card__title">Протезирование</h3>
+            <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими зуботехническими лабораториями.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3 class="service-card__title">Хирургия</h3>
+            <p class="service-card__desc">Удаление зубов любой сложности, в том числе зубов мудрости. Пластика уздечки, операции на дёснах.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3 class="service-card__title">Детская стоматология</h3>
+            <p class="service-card__desc">Лечение молочных и постоянных зубов у детей. Герметизация фиссур, профилактика кариеса.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3 class="service-card__title">Художественная реставрация</h3>
+            <p class="service-card__desc">Восстановление формы и цвета зубов. Устранение сколов, трещин, потемнений эмали.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3 class="service-card__title">Лечение дёсен</h3>
+            <p class="service-card__desc">Пародонтология: лечение гингивита, пародонтита. Профессиональная гигиена, Vector-терапия.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3 class="service-card__title">Рентген-диагностика</h3>
+            <p class="service-card__desc">Цифровой визиограф и ортопантомограф — точнейшая диагностика с минимальной лучевой нагрузкой.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div style="margin-top: var(--space-xl); padding: var(--space-md); background: var(--paper-warm); border-radius: 6px; border-left: 3px solid var(--cyan-primary);">
+        <p class="mb-0">
+          <strong>Точную стоимость лечения</strong> определяет врач после осмотра и диагностики. 
+          Мы составляем индивидуальный план с фиксированной ценой и гарантийными обязательствами по договору.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section section--navy booking" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <h2>Запишитесь на консультацию</h2>
+        <p class="booking__subtitle">Осмотр, диагностика, план лечения с точной стоимостью</p>
+        
+        <form class="booking-form" onsubmit="handleSubmit(event)">
+          <input type="text" class="form-input" placeholder="Ваше имя" required>
+          <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+          <button type="submit" class="btn btn--primary">Записаться</button>
+        </form>
+        
+        <p class="text-sm" style="margin-top: var(--space-sm); opacity: 0.7;">
+          Ежедневно 10:00–21:00, без перерывов
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Квалите<span>Т</span></div>
+          <p class="footer__desc">
+            Центр семейной стоматологии. 20 лет заботы о здоровье вашей улыбки. 
+            Клинический центр РНИМУ им. Н.И. Пирогова. Инновационный центр СтАР.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="uslugi.html">Услуги и цены</a></li>
+            <li><a href="kontakty.html">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Контакты</h4>
+          <p class="footer__contact-item"><a href="tel:+74994813208">+7 499 481-3208</a></p>
+          <p class="footer__contact-item"><a href="tel:+74994819700">+7 499 481-9700</a></p>
+          <p class="footer__contact-item"><a href="tel:+79660194119">+7 966 019-4119</a></p>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Адрес</h4>
+          <p class="footer__contact-item">г. Москва,<br>ул. Дубнинская, 13</p>
+          <p class="footer__contact-item">Ежедневно<br>10:00–21:00</p>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>© 2026 ООО «СК КвалитеТ». Все права защищены.</p>
+        <p class="footer__legal">
+          ОГРН 1027739376026 · Лицензия ЛО-77-01-009015 от 18.09.2014, Департамент здравоохранения Москвы
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('is-open');
+    }
+    
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Спасибо! Мы перезвоним вам в ближайшее время.');
+    }
+  </script>
+
+</body>
+</html>
