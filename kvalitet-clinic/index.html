@@ -16,7 +16,7 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <a href="index.html" class="logo">Квалите<span>Т</span></a>
@@ -48,19 +48,51 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO - CINEMATIC -->
   <section class="hero">
+    <div class="hero__bg">
+      <img src="img/hero-treatment.jpg" alt="Лечение в клинике КвалитеТ" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    
+    <div class="hero__content">
+      <span class="hero__eyebrow">Семейная стоматология · 20 лет</span>
+      <h1 class="hero__title">К нам приходят по&nbsp;рекомендациям</h1>
+      <p class="hero__subtitle">
+        Лечение под микроскопом, компьютерная анестезия без боли, гарантия результата. 
+        Клинический центр РНИМУ им. Н.И.&nbsp;Пирогова.
+      </p>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--primary">Записаться на приём</a>
+        <a href="uslugi.html" class="btn btn--outline">Услуги и цены</a>
+      </div>
+    </div>
+    
+    <div class="hero__scroll">
+      <span>Подробнее</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
     <div class="container">
-      <div class="hero__content">
-        <span class="hero__eyebrow">Семейная стоматология · 20 лет</span>
-        <h1 class="hero__title">К нам приходят по&nbsp;рекомендациям</h1>
-        <p class="hero__subtitle">
-          Клиника КвалитеТ — это точность, качество и забота о каждом пациенте. 
-          Лечение под микроскопом, компьютерная анестезия без боли, гарантия результата.
-        </p>
-        <div class="hero__actions">
-          <a href="#booking" class="btn btn--primary">Записаться на приём</a>
-          <a href="uslugi.html" class="btn btn--outline">Услуги и цены</a>
+      <div class="stats__grid">
+        <div class="stat fade-in">
+          <div class="stat__number" data-count="20">20</div>
+          <div class="stat__label">лет работы</div>
+        </div>
+        <div class="stat fade-in">
+          <div class="stat__number">10–21</div>
+          <div class="stat__label">ежедневно</div>
+        </div>
+        <div class="stat fade-in">
+          <div class="stat__number">Pirogov</div>
+          <div class="stat__label">клинический центр</div>
+        </div>
+        <div class="stat fade-in">
+          <div class="stat__number">СтАР</div>
+          <div class="stat__label">инновационный центр</div>
         </div>
       </div>
     </div>
@@ -70,24 +102,26 @@
   <section class="section">
     <div class="container">
       <div class="about">
-        <div class="section__header">
-          <h2>Добро пожаловать в КвалитеТ</h2>
-          <p class="text-muted">От латинского Qualitas — точность и качество</p>
+        <div class="about__portrait fade-in">
+          <img src="img/klepilin.jpg" alt="Клепилин Егор Сергеевич" class="about__portrait-img">
+          <p class="about__portrait-label">Главный врач клиники</p>
         </div>
         
-        <blockquote class="about__quote">
-          «Главный наш девиз – помогать людям. Клинике уже 20 лет. И приходят к нам не по рекламе, а по рекомендациям. Самый важный показатель отношения наших пациентов – когда люди рекомендуют нас своим знакомым и доверяют нам самое ценное – своих детей.»
+        <div class="about__content fade-in">
+          <blockquote class="about__quote">
+            Главный наш девиз – помогать людям. Клинике уже 20 лет. И приходят к нам не по рекламе, а по рекомендациям. Самый важный показатель отношения наших пациентов – когда люди рекомендуют нас своим знакомым и доверяют нам самое ценное – своих детей.
+          </blockquote>
           <footer class="about__author">
             <strong>Клепилин Егор Сергеевич</strong>
             <span>Главный врач клиники, стоматолог-хирург, имплантолог, ортопед</span>
           </footer>
-        </blockquote>
-        
-        <div class="about__badges">
-          <span class="badge">Клинический центр РНИМУ им. Н.И. Пирогова</span>
-          <span class="badge">Инновационный центр СтАР</span>
-          <span class="badge">Лечение под микроскопом</span>
-          <span class="badge">Компьютерная анестезия</span>
+          
+          <div class="about__badges">
+            <span class="badge">Клинический центр РНИМУ им. Н.И. Пирогова</span>
+            <span class="badge">Инновационный центр СтАР</span>
+            <span class="badge">Лечение под микроскопом</span>
+            <span class="badge">Компьютерная анестезия</span>
+          </div>
         </div>
       </div>
     </div>
@@ -96,57 +130,105 @@
   <!-- SERVICES -->
   <section class="section section--alt">
     <div class="container">
-      <div class="section__header section__header--center">
+      <div class="section__header section__header--center fade-in">
         <h2>Услуги клиники</h2>
         <p class="text-muted">Все виды стоматологической помощи для взрослых и детей</p>
       </div>
       
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card__icon">🦷</div>
-          <h3 class="service-card__title">Терапия</h3>
-          <p class="service-card__desc">Лечение кариеса, пульпита, периодонтита. Работа под микроскопом для максимальной точности.</p>
-          <p class="service-card__price">от 10 000 ₽</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/microscope.jpg" alt="Терапия под микроскопом">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+            </div>
+            <h3 class="service-card__title">Терапия</h3>
+            <p class="service-card__desc">Лечение кариеса, пульпита, периодонтита. Работа под микроскопом для максимальной точности.</p>
+            <p class="service-card__price">от 10 000 ₽</p>
+          </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-card__icon">⚙️</div>
-          <h3 class="service-card__title">Имплантация</h3>
-          <p class="service-card__desc">Установка имплантатов Straumann, Osstem, Xive, Astra Tech. Синус-лифтинг, костная пластика.</p>
-          <p class="service-card__price">от 80 000 ₽</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/dentist-loupes.jpg" alt="Имплантация">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title">Имплантация</h3>
+            <p class="service-card__desc">Установка имплантатов Straumann, Osstem, Xive, Astra Tech. Синус-лифтинг, костная пластика.</p>
+            <p class="service-card__price">от 80 000 ₽</p>
+          </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-card__icon">✨</div>
-          <h3 class="service-card__title">Протезирование</h3>
-          <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими лабораториями.</p>
-          <p class="service-card__price">по прайсу</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/clinic-action-1.jpg" alt="Протезирование">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 1 9 9c0 3.5-2 6.5-5 8l-4-4-4 4c-3-1.5-5-4.5-5-8a9 9 0 0 1 9-9z"/></svg>
+            </div>
+            <h3 class="service-card__title">Протезирование</h3>
+            <p class="service-card__desc">Виниры, коронки, мосты, съёмные протезы. Работаем с лучшими лабораториями.</p>
+            <p class="service-card__price">по прайсу</p>
+          </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-card__icon">👶</div>
-          <h3 class="service-card__title">Детская стоматология</h3>
-          <p class="service-card__desc">Бережное лечение молочных и постоянных зубов. Герметизация фиссур, профилактика.</p>
-          <p class="service-card__price">от 8 000 ₽</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/clinic-action-2.jpg" alt="Детская стоматология">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M9 12h6m-3-3v6"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3 class="service-card__title">Детская стоматология</h3>
+            <p class="service-card__desc">Бережное лечение молочных и постоянных зубов. Герметизация фиссур, профилактика.</p>
+            <p class="service-card__price">от 8 000 ₽</p>
+          </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-card__icon">📐</div>
-          <h3 class="service-card__title">Ортодонтия</h3>
-          <p class="service-card__desc">Исправление прикуса: брекеты, пластинки, элайнеры. Для детей и взрослых.</p>
-          <p class="service-card__price">от 70 000 ₽</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/clinic-action-3.jpg" alt="Ортодонтия">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+            </div>
+            <h3 class="service-card__title">Ортодонтия</h3>
+            <p class="service-card__desc">Исправление прикуса: брекеты, пластинки, элайнеры. Для детей и взрослых.</p>
+            <p class="service-card__price">от 70 000 ₽</p>
+          </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-card__icon">🧹</div>
-          <h3 class="service-card__title">Гигиена и профилактика</h3>
-          <p class="service-card__desc">Профессиональная чистка, снятие камня, отбеливание. Рекомендуем раз в полгода.</p>
-          <p class="service-card__price">по прайсу</p>
+        <div class="service-card fade-in">
+          <div class="service-card__bg">
+            <img src="img/hero-treatment.jpg" alt="Гигиена">
+          </div>
+          <div class="service-card__overlay"></div>
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z"/></svg>
+            </div>
+            <h3 class="service-card__title">Гигиена и профилактика</h3>
+            <p class="service-card__desc">Профессиональная чистка, снятие камня, отбеливание. Рекомендуем раз в полгода.</p>
+            <p class="service-card__price">по прайсу</p>
+          </div>
         </div>
       </div>
       
-      <div class="text-center" style="margin-top: var(--space-lg);">
-        <a href="uslugi.html" class="btn btn--outline">Все услуги и цены</a>
+      <div class="text-center" style="margin-top: var(--space-xl);">
+        <a href="uslugi.html" class="btn btn--outline-dark">Все услуги и цены</a>
       </div>
     </div>
   </section>
@@ -154,31 +236,35 @@
   <!-- DOCTORS -->
   <section class="section">
     <div class="container">
-      <div class="section__header section__header--center">
+      <div class="section__header section__header--center fade-in">
         <h2>Наши специалисты</h2>
         <p class="text-muted">Врачи постоянно повышают квалификацию в России, Германии, Швеции, Швейцарии</p>
       </div>
       
       <div class="doctors-grid">
-        <div class="doctor-card">
-          <div class="doctor-card__avatar">ЕК</div>
+        <div class="doctor-card fade-in">
+          <div class="doctor-card__portrait">
+            <img src="img/klepilin.jpg" alt="Клепилин Егор Сергеевич">
+          </div>
           <h3 class="doctor-card__name">Клепилин Егор Сергеевич</h3>
           <p class="doctor-card__title">Главный врач, хирург, имплантолог, ортопед</p>
         </div>
         
-        <div class="doctor-card">
-          <div class="doctor-card__avatar">ЕВ</div>
+        <div class="doctor-card fade-in">
+          <div class="doctor-card__portrait">
+            <img src="img/vasileva.jpg" alt="Васильева Евгения Дмитриевна">
+          </div>
           <h3 class="doctor-card__name">Васильева Евгения Дмитриевна</h3>
           <p class="doctor-card__title">Микроскопист, эндодонтист</p>
         </div>
         
-        <div class="doctor-card">
+        <div class="doctor-card fade-in">
           <div class="doctor-card__avatar">АМ</div>
           <h3 class="doctor-card__name">Маркосян Альберт Александрович</h3>
           <p class="doctor-card__title">Ортопед, гнатолог</p>
         </div>
         
-        <div class="doctor-card">
+        <div class="doctor-card fade-in">
           <div class="doctor-card__avatar">ЛШ</div>
           <h3 class="doctor-card__name">Шор Лиора Мошевна</h3>
           <p class="doctor-card__title">Терапевт, эндодонтист, микроскопист</p>
@@ -188,26 +274,29 @@
   </section>
 
   <!-- REVIEWS -->
-  <section class="section section--alt">
+  <section class="section section--alt reviews">
+    <div class="reviews__bg">
+      <img src="img/clinic-action-1.jpg" alt="">
+    </div>
     <div class="container">
-      <div class="section__header section__header--center">
+      <div class="section__header section__header--center fade-in">
         <h2>Отзывы пациентов</h2>
       </div>
       
       <div class="reviews-grid">
-        <div class="review-card">
+        <div class="review-card fade-in">
           <p class="review-card__text">
-            «Ходим всей семьёй. Дети получают подарок за храбрость — это так мило! 
-            Отдельное спасибо администраторам Анастасии, Екатерине и Людмиле за тёплый приём.»
+            Ходим всей семьёй. Дети получают подарок за храбрость — это так мило! 
+            Отдельное спасибо администраторам Анастасии, Екатерине и Людмиле за тёплый приём.
           </p>
           <p class="review-card__author">Наталья Сергеева</p>
           <p class="review-card__date">Декабрь 2025</p>
         </div>
         
-        <div class="review-card">
+        <div class="review-card fade-in">
           <p class="review-card__text">
-            «Светлана Николаевна Мирошниченко — прекрасный врач. Внимательная, аккуратная, 
-            всё объясняет. Лечение прошло совершенно безболезненно. Рекомендую!»
+            Светлана Николаевна Мирошниченко — прекрасный врач. Внимательная, аккуратная, 
+            всё объясняет. Лечение прошло совершенно безболезненно. Рекомендую!
           </p>
           <p class="review-card__author">Евгения</p>
           <p class="review-card__date">12 декабря 2022</p>
@@ -218,8 +307,12 @@
 
   <!-- BOOKING -->
   <section class="section section--navy booking" id="booking">
+    <div class="booking__bg">
+      <img src="img/microscope.jpg" alt="">
+    </div>
+    <div class="booking__overlay"></div>
     <div class="container">
-      <div class="booking__inner">
+      <div class="booking__inner fade-in">
         <h2>Запишитесь на приём</h2>
         <p class="booking__subtitle">Оставьте контакты — мы перезвоним и подберём удобное время</p>
         
@@ -281,13 +374,57 @@
   </footer>
 
   <script>
+    // Mobile nav toggle
     function toggleMobileNav() {
       document.getElementById('mobileNav').classList.toggle('is-open');
     }
     
+    // Form handler
     function handleSubmit(e) {
       e.preventDefault();
       alert('Спасибо! Мы перезвоним вам в ближайшее время.');
+    }
+    
+    // Sticky header with blur
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 50) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+      lastScroll = currentScroll;
+    }, { passive: true });
+    
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(el => {
+      fadeObserver.observe(el);
+    });
+    
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('is-visible');
+      });
     }
   </script>
 
